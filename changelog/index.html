@@ -1,0 +1,2943 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://geemap.org/changelog/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+    
+    
+      
+        <title>Changelog - geemap</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-186406134-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="geemap" class="md-header__button md-logo" aria-label="geemap" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            geemap
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/giswqs/geemap/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="geemap" class="md-nav__button md-logo" aria-label="geemap" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    geemap
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/giswqs/geemap/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../get-started/" class="md-nav__link">
+        Get Started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet/" class="md-nav__link">
+        Cheat Sheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        Geemap Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://tutorials.geemap.org" class="md-nav__link">
+        GEE Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citations/" class="md-nav__link">
+        Citations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Changelog
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v0816-may-10-2021" class="md-nav__link">
+    v0.8.16 - May 10, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0815-april-28-2021" class="md-nav__link">
+    v0.8.15 - April 28, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0814-april-20-2021" class="md-nav__link">
+    v0.8.14 - April 20, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0813-march-22-2021" class="md-nav__link">
+    v0.8.13 - March 22, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0812-march-8-2021" class="md-nav__link">
+    v0.8.12 - March 8, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0811-february-23-2021" class="md-nav__link">
+    v0.8.11 - February 23, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0810-february-16-2021" class="md-nav__link">
+    v0.8.10 - February 16, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v089-february-4-2021" class="md-nav__link">
+    v0.8.9 - February 4, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v088-january-17-2021" class="md-nav__link">
+    v0.8.8 - January 17, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v087-december-27-2020" class="md-nav__link">
+    v0.8.7 - December 27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v086-december-22-2020" class="md-nav__link">
+    v0.8.6 - December 22, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v085-december-12-2020" class="md-nav__link">
+    v0.8.5 - December 12, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v084-december-6-2020" class="md-nav__link">
+    v0.8.4 - December 6, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v083-december-2-2020" class="md-nav__link">
+    v0.8.3 - December 2, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v082-november-6-2020" class="md-nav__link">
+    v0.8.2 - November 6, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v081-october-27-2020" class="md-nav__link">
+    v0.8.1 - October 27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v080-october-10-2020" class="md-nav__link">
+    v0.8.0 - October 10, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0713-september-15-2020" class="md-nav__link">
+    v0.7.13 - September 15, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0712-september-1-2020" class="md-nav__link">
+    v0.7.12 - September 1, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0711-august-16-2020" class="md-nav__link">
+    v0.7.11 - August 16, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0710-august-5-2020" class="md-nav__link">
+    v0.7.10 - August 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v077-august-5-2020" class="md-nav__link">
+    v0.7.7 - August 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v070-may-22-2020" class="md-nav__link">
+    v0.7.0 - May 22, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v060-april-5-2020" class="md-nav__link">
+    v0.6.0 - April 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v050-march-23-2020" class="md-nav__link">
+    v0.5.0 - March 23, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v040-march-19-2020" class="md-nav__link">
+    v0.4.0 - March 19, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030-march-18-2020" class="md-nav__link">
+    v0.3.0 - March 18, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-march-17-2020" class="md-nav__link">
+    v0.2.0 - March 17, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-march-8-2020" class="md-nav__link">
+    v0.1.0 - March 8, 2020
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://geemap-tutorials.herokuapp.com" class="md-nav__link">
+        Voilà App
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://blog.gishub.org" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/c/QiushengWu" class="md-nav__link">
+        YouTube Channel
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/giswqs/geemap/issues" class="md-nav__link">
+        Report Issues
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      <label class="md-nav__link" for="__nav_16">
+        API Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
+          <span class="md-nav__icon md-icon"></span>
+          API Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basemaps/" class="md-nav__link">
+        basemaps module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cartoee/" class="md-nav__link">
+        cartoee module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chart/" class="md-nav__link">
+        chart module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../colormaps/" class="md-nav__link">
+        colormaps module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common/" class="md-nav__link">
+        common module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conversion/" class="md-nav__link">
+        conversion module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/" class="md-nav__link">
+        datasets module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eefolium/" class="md-nav__link">
+        eefolium module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geemap/" class="md-nav__link">
+        geemap module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legends/" class="md-nav__link">
+        legends module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ml/" class="md-nav__link">
+        ml module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toolbar/" class="md-nav__link">
+        toolbar module
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+      
+      <label class="md-nav__link" for="__nav_17">
+        Workshops
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Workshops" data-md-level="1">
+        <label class="md-nav__title" for="__nav_17">
+          <span class="md-nav__icon md-icon"></span>
+          Workshops
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workshops/GeoPython_2021/" class="md-nav__link">
+        GeoPython 2021
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
+      
+      <label class="md-nav__link" for="__nav_18">
+        Notebooks
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_18">
+          <span class="md-nav__icon md-icon"></span>
+          Notebooks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/00_geemap_key_features/" class="md-nav__link">
+        00 geemap key features
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/01_geemap_intro/" class="md-nav__link">
+        01 geemap intro
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/02_using_basemaps/" class="md-nav__link">
+        02 using basemaps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/03_inspector_tool/" class="md-nav__link">
+        03 inspector tool
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/04_split_panel_map/" class="md-nav__link">
+        04 split panel map
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/05_drawing_tools/" class="md-nav__link">
+        05 drawing tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/06_marker_cluster/" class="md-nav__link">
+        06 marker cluster
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/07_geojson/" class="md-nav__link">
+        07 geojson
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/08_ee_js_to_ipynb/" class="md-nav__link">
+        08 ee js to ipynb
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/09_plotting/" class="md-nav__link">
+        09 plotting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/10_shapefiles/" class="md-nav__link">
+        10 shapefiles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/11_export_image/" class="md-nav__link">
+        11 export image
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/12_zonal_statistics/" class="md-nav__link">
+        12 zonal statistics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/13_zonal_statistics_by_group/" class="md-nav__link">
+        13 zonal statistics by group
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/14_legends/" class="md-nav__link">
+        14 legends
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/15_convert_js_to_py/" class="md-nav__link">
+        15 convert js to py
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/16_add_animated_text/" class="md-nav__link">
+        16 add animated text
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/17_add_colorbar_to_gif/" class="md-nav__link">
+        17 add colorbar to gif
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/18_create_landsat_timelapse/" class="md-nav__link">
+        18 create landsat timelapse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/19_search_places_and_datasets/" class="md-nav__link">
+        19 search places and datasets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/20_timeseries_inspector/" class="md-nav__link">
+        20 timeseries inspector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/21_export_map_to_html_png/" class="md-nav__link">
+        21 export map to html png
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/22_import_scripts/" class="md-nav__link">
+        22 import scripts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/23_import_assets/" class="md-nav__link">
+        23 import assets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/24_publish_maps/" class="md-nav__link">
+        24 publish maps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/25_load_rasters/" class="md-nav__link">
+        25 load rasters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/26_heroku/" class="md-nav__link">
+        26 heroku
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/27_timelapse_app/" class="md-nav__link">
+        27 timelapse app
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/28_voila/" class="md-nav__link">
+        28 voila
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/29_pydeck/" class="md-nav__link">
+        29 pydeck
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/30_image_props_stats/" class="md-nav__link">
+        30 image props stats
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/31_unsupervised_classification/" class="md-nav__link">
+        31 unsupervised classification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/32_supervised_classification/" class="md-nav__link">
+        32 supervised classification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/33_accuracy_assessment/" class="md-nav__link">
+        33 accuracy assessment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/34_extract_values/" class="md-nav__link">
+        34 extract values
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/35_geemap_colab/" class="md-nav__link">
+        35 geemap colab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/36_quality_mosaic/" class="md-nav__link">
+        36 quality mosaic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/37_pydeck_3d/" class="md-nav__link">
+        37 pydeck 3d
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/38_cloud_geotiff/" class="md-nav__link">
+        38 cloud geotiff
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/39_timelapse/" class="md-nav__link">
+        39 timelapse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/40_ipywidgets/" class="md-nav__link">
+        40 ipywidgets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/41_water_app/" class="md-nav__link">
+        41 water app
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/42_upload_data/" class="md-nav__link">
+        42 upload data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/43_extract_values_to_points/" class="md-nav__link">
+        43 extract values to points
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/44_cog_stac/" class="md-nav__link">
+        44 cog stac
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/45_cog_mosaic/" class="md-nav__link">
+        45 cog mosaic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/46_local_rf_training/" class="md-nav__link">
+        46 local rf training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/47_image_thumbnails/" class="md-nav__link">
+        47 image thumbnails
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/48_folium_legend/" class="md-nav__link">
+        48 folium legend
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/49_colorbar/" class="md-nav__link">
+        49 colorbar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/50_cartoee_quickstart/" class="md-nav__link">
+        50 cartoee quickstart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/51_cartoee_projections/" class="md-nav__link">
+        51 cartoee projections
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/52_cartoee_gif/" class="md-nav__link">
+        52 cartoee gif
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/53_layer_vis/" class="md-nav__link">
+        53 layer vis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/54_vector_vis/" class="md-nav__link">
+        54 vector vis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/55_raster_vis/" class="md-nav__link">
+        55 raster vis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/56_local_data/" class="md-nav__link">
+        56 local data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/57_cartoee_blend/" class="md-nav__link">
+        57 cartoee blend
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/58_add_vector/" class="md-nav__link">
+        58 add vector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/59_whitebox/" class="md-nav__link">
+        59 whitebox
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/60_colormaps/" class="md-nav__link">
+        60 colormaps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/61_cartoee_scalebar/" class="md-nav__link">
+        61 cartoee scalebar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/62_time_slider/" class="md-nav__link">
+        62 time slider
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/63_charts/" class="md-nav__link">
+        63 charts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/64_data_catalog/" class="md-nav__link">
+        64 data catalog
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/65_vector_styling/" class="md-nav__link">
+        65 vector styling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/66_cartoee_legend/" class="md-nav__link">
+        66 cartoee legend
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/67_training_samples/" class="md-nav__link">
+        67 training samples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/68_netcdf_to_ee/" class="md-nav__link">
+        68 netcdf to ee
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/69_cartoee_vector/" class="md-nav__link">
+        69 cartoee vector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/70_linked_maps/" class="md-nav__link">
+        70 linked maps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/71_timelapse/" class="md-nav__link">
+        71 timelapse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/72_time_slider_gui/" class="md-nav__link">
+        72 time slider gui
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/73_transect/" class="md-nav__link">
+        73 transect
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/74_csv_to_points/" class="md-nav__link">
+        74 csv to points
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/75_sankee/" class="md-nav__link">
+        75 sankee
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_77" type="checkbox" id="__nav_18_77" >
+      
+      <label class="md-nav__link" for="__nav_18_77">
+        miscellaneous
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="miscellaneous" data-md-level="2">
+        <label class="md-nav__title" for="__nav_18_77">
+          <span class="md-nav__icon md-icon"></span>
+          miscellaneous
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_colab/" class="md-nav__link">
+        Cartoee colab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_colorbar/" class="md-nav__link">
+        Cartoee colorbar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_projections/" class="md-nav__link">
+        Cartoee projections
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_quickstart/" class="md-nav__link">
+        Cartoee quickstart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_scalebar/" class="md-nav__link">
+        Cartoee scalebar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/cartoee_subplots/" class="md-nav__link">
+        Cartoee subplots
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/file_browser/" class="md-nav__link">
+        File browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_and_earthengine/" class="md-nav__link">
+        Geemap and earthengine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_and_folium/" class="md-nav__link">
+        Geemap and folium
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_and_ipyleaflet/" class="md-nav__link">
+        Geemap and ipyleaflet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_and_ipywidgets/" class="md-nav__link">
+        Geemap and ipywidgets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_colab/" class="md-nav__link">
+        Geemap colab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geemap_matplotlib/" class="md-nav__link">
+        Geemap matplotlib
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/geopandas/" class="md-nav__link">
+        Geopandas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/image_overlay/" class="md-nav__link">
+        Image overlay
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/ipyleaflet_draw_control/" class="md-nav__link">
+        Ipyleaflet draw control
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/ipyleaflet_tutorials/" class="md-nav__link">
+        Ipyleaflet tutorials
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/ipywidgets_demo/" class="md-nav__link">
+        Ipywidgets demo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/kml_kmz/" class="md-nav__link">
+        Kml kmz
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/local_rf_training/" class="md-nav__link">
+        Local rf training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/mouse_click_coordinates/" class="md-nav__link">
+        Mouse click coordinates
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/netcdf/" class="md-nav__link">
+        Netcdf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/notebook_template/" class="md-nav__link">
+        Notebook template
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/oil_palm_and_rubber_plantation/" class="md-nav__link">
+        Oil palm and rubber plantation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/qgis_layer_style_file/" class="md-nav__link">
+        Qgis layer style file
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/random_sampling/" class="md-nav__link">
+        Random sampling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/select_features/" class="md-nav__link">
+        Select features
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/select_features_old/" class="md-nav__link">
+        Select features old
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/surface_water_mapping/" class="md-nav__link">
+        Surface water mapping
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/template/" class="md-nav__link">
+        Template
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/tn_surface_water/" class="md-nav__link">
+        Tn surface water
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/us_census_data/" class="md-nav__link">
+        Us census data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/usda_naip_imagery/" class="md-nav__link">
+        Usda naip imagery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/velocity/" class="md-nav__link">
+        Velocity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/video_overlay/" class="md-nav__link">
+        Video overlay
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/water_app/" class="md-nav__link">
+        Water app
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/xy_to_points.ipynb" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v0816-may-10-2021" class="md-nav__link">
+    v0.8.16 - May 10, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0815-april-28-2021" class="md-nav__link">
+    v0.8.15 - April 28, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0814-april-20-2021" class="md-nav__link">
+    v0.8.14 - April 20, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0813-march-22-2021" class="md-nav__link">
+    v0.8.13 - March 22, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0812-march-8-2021" class="md-nav__link">
+    v0.8.12 - March 8, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0811-february-23-2021" class="md-nav__link">
+    v0.8.11 - February 23, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0810-february-16-2021" class="md-nav__link">
+    v0.8.10 - February 16, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v089-february-4-2021" class="md-nav__link">
+    v0.8.9 - February 4, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v088-january-17-2021" class="md-nav__link">
+    v0.8.8 - January 17, 2021
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v087-december-27-2020" class="md-nav__link">
+    v0.8.7 - December 27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v086-december-22-2020" class="md-nav__link">
+    v0.8.6 - December 22, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v085-december-12-2020" class="md-nav__link">
+    v0.8.5 - December 12, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v084-december-6-2020" class="md-nav__link">
+    v0.8.4 - December 6, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v083-december-2-2020" class="md-nav__link">
+    v0.8.3 - December 2, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v082-november-6-2020" class="md-nav__link">
+    v0.8.2 - November 6, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v081-october-27-2020" class="md-nav__link">
+    v0.8.1 - October 27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v080-october-10-2020" class="md-nav__link">
+    v0.8.0 - October 10, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0713-september-15-2020" class="md-nav__link">
+    v0.7.13 - September 15, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0712-september-1-2020" class="md-nav__link">
+    v0.7.12 - September 1, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0711-august-16-2020" class="md-nav__link">
+    v0.7.11 - August 16, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v0710-august-5-2020" class="md-nav__link">
+    v0.7.10 - August 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v077-august-5-2020" class="md-nav__link">
+    v0.7.7 - August 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v070-may-22-2020" class="md-nav__link">
+    v0.7.0 - May 22, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v060-april-5-2020" class="md-nav__link">
+    v0.6.0 - April 5, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v050-march-23-2020" class="md-nav__link">
+    v0.5.0 - March 23, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v040-march-19-2020" class="md-nav__link">
+    v0.4.0 - March 19, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030-march-18-2020" class="md-nav__link">
+    v0.3.0 - March 18, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v020-march-17-2020" class="md-nav__link">
+    v0.2.0 - March 17, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v010-march-8-2020" class="md-nav__link">
+    v0.1.0 - March 8, 2020
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+
+
+
+                
+                  <a href="https://github.com/giswqs/geemap/edit/master/docs/changelog.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h2 id="v0816-may-10-2021">v0.8.16 - May 10, 2021<a class="headerlink" href="#v0816-may-10-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added csv_to_points GUI <a href="https://github.com/giswqs/geemap/issues/461">#461</a></li>
+<li>Added GUI for creating transects <a href="https://github.com/giswqs/geemap/issues/454">#454</a></li>
+<li>Added csv_to_ee and csv_to_makers <a href="https://github.com/giswqs/geemap/issues/461">#461</a></li>
+<li>Added geopandas support <a href="https://github.com/giswqs/geemap/issues/455">#455</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved geojson style <a href="https://github.com/giswqs/geemap/issues/459">#459</a> <a href="https://github.com/giswqs/geemap/issues/460">#460</a></li>
+<li>Improved vector support <a href="https://github.com/giswqs/geemap/issues/455">#455</a></li>
+<li>Improved add_colorbar function <a href="https://github.com/giswqs/geemap/issues/450">#450</a></li>
+<li>Improved add_raster function <a href="https://github.com/giswqs/geemap/pull/449">#449</a></li>
+<li>Updated notebooks</li>
+</ul>
+<h2 id="v0815-april-28-2021">v0.8.15 - April 28, 2021<a class="headerlink" href="#v0815-april-28-2021" title="Permanent link">&para;</a></h2>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved shp_to_geojson function <a href="https://github.com/giswqs/geemap/discussions/430">#430</a></li>
+<li>Improved add_styled_vector function <a href="https://github.com/giswqs/geemap/discussions/432">#432</a></li>
+<li>Fixed map publish bug <a href="https://github.com/giswqs/geemap/issues/445">#445</a></li>
+<li>Improved add_colorbar function <a href="https://github.com/giswqs/geemap/commit/dc7e54856694a1994b6d4f4044385babe04bd086">dc7e548</a></li>
+</ul>
+<h2 id="v0814-april-20-2021">v0.8.14 - April 20, 2021<a class="headerlink" href="#v0814-april-20-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added timelapse GUI <a href="https://github.com/giswqs/geemap/issues/359">#359</a></li>
+<li>Added timeslider GUI <a href="https://github.com/giswqs/geemap/issues/359">#359</a> <a href="https://github.com/giswqs/geemap/issues/387">#387</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved add_geojson function <a href="https://github.com/giswqs/geemap/commit/731e59efc4a1f629db13f6b6cc4e9ef6b06cbe8f">731e59e</a></li>
+<li>Added GeoPython workshop notebook <a href="https://geemap.org/workshops/GeoPython_2021">6efd5e</a></li>
+<li>Improved cartoee colorbar <a href="https://github.com/giswqs/geemap/discussions/413">#413</a></li>
+<li>Improved cartoee add_layer function <a href="https://github.com/giswqs/geemap/issues/368">#368</a></li>
+</ul>
+<h2 id="v0813-march-22-2021">v0.8.13 - March 22, 2021<a class="headerlink" href="#v0813-march-22-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added linked maps <a href="https://github.com/giswqs/geemap/issues/375">#375</a></li>
+<li>Added cartoee legend <a href="https://github.com/giswqs/geemap/issues/343">#343</a></li>
+<li>Added chart by feature property <a href="https://github.com/giswqs/geemap/issues/339">#339</a></li>
+<li>Added tool gui template <a href="https://github.com/giswqs/geemap/issues/239">#239</a></li>
+<li>Added GEE Toolbox GUI <a href="https://github.com/giswqs/geemap/issues/362">#362</a></li>
+<li>Added support for multiple legends <a href="https://github.com/giswqs/geemap/discussions/365">#365</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved dataset module to use GEE STAC <a href="https://github.com/giswqs/geemap/issues/346">#346</a></li>
+<li>Improved training sample tool <a href="https://github.com/giswqs/geemap/issues/326">#326</a></li>
+<li>Added netcdf_to_ee example <a href="https://github.com/giswqs/geemap/issues/285">#285</a></li>
+<li>Improved to_html function <a href="https://github.com/giswqs/geemap/discussions/361">#361</a></li>
+<li>Changed colorbar plotting backend <a href="https://github.com/giswqs/geemap/issues/372">#372</a></li>
+<li>Improved get_colorbar function <a href="https://github.com/giswqs/geemap/issues/372">#372</a></li>
+<li>Added vector styling example</li>
+<li>Improved zonal statistics</li>
+</ul>
+<h2 id="v0812-march-8-2021">v0.8.12 - March 8, 2021<a class="headerlink" href="#v0812-march-8-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added a dataset module for accessing the Earth Engine Data Catalog via dot notation <a href="https://github.com/giswqs/geemap/issues/345">#345</a></li>
+<li>Added a chart module for creating interactive charts for Earth Engine data <a href="https://github.com/giswqs/geemap/issues/343">#343</a></li>
+<li>Added a time slider for visualizing Earth Engine time-series images <a href="https://github.com/giswqs/geemap/issues/335">#335 </a> <a href="https://github.com/giswqs/geemap/issues/344">#344</a></li>
+<li>Added a <code>netcdf_to_ee</code> function <a href="https://github.com/giswqs/geemap/pull/342">#342</a></li>
+<li>Added a <code>numpy_to_ee</code> function <a href="https://github.com/giswqs/geemap/pull/337">#337</a></li>
+<li>Added vertical colorbar support <a href="https://github.com/giswqs/geemap/issues/322">#322</a></li>
+<li>Added GUI for creating training samples <a href="https://github.com/giswqs/geemap/issues/326">#326</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Added layer control by default to folium map <a href="https://github.com/giswqs/geemap/issues/323">#323</a></li>
+<li>Added geemap matplotlib example <a href="https://github.com/giswqs/geemap/discussions/319">#319</a></li>
+<li>Added lgtm continuous integration <a href="https://github.com/giswqs/geemap/issues/330">#330</a></li>
+<li>Fixed layer palette bug <a href="https://github.com/giswqs/geemap/issues/334">#334</a></li>
+<li>Fixed minimap zoom parameter <a href="https://github.com/giswqs/geemap/pull/329">#329</a></li>
+<li>Fixed centerObject bug</li>
+</ul>
+<h2 id="v0811-february-23-2021">v0.8.11 - February 23, 2021<a class="headerlink" href="#v0811-february-23-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added a colormap module <a href="https://github.com/giswqs/geemap/issues/302">#302</a></li>
+<li>Added a new cartoee scale bar function <a href="https://github.com/giswqs/geemap/pull/313">#313</a></li>
+<li>Added extract pixel values funciton <a href="https://github.com/giswqs/geemap/issues/315">#315</a></li>
+<li>Visualizing Earth Engine image with &gt;200 matplotlib colormaps via dot notation (<a href="https://geemap.org/notebooks/60_colormaps/">example</a>)</li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved the basemap module accessible via dot notation <a href="https://github.com/giswqs/geemap/issues/302">#302</a></li>
+<li>Added googledrivedownloader and python-box to requirements <a href="https://github.com/giswqs/geemap/discussions/310">#310</a></li>
+<li>Fixed folium layer name bug <a href="https://github.com/giswqs/geemap/issues/314">#314</a></li>
+</ul>
+<h2 id="v0810-february-16-2021">v0.8.10 - February 16, 2021<a class="headerlink" href="#v0810-february-16-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added default basemap options when creating the Map <a href="https://github.com/giswqs/geemap/issues/293">#293</a></li>
+<li>Added GUI for change basemaps <a href="https://github.com/giswqs/geemap/issues/294">#294</a></li>
+<li>Added GUI for js2py conversion <a href="https://github.com/giswqs/geemap/issues/296">#296</a></li>
+<li>Added geemap cheat sheet <a href="https://github.com/giswqs/geemap/issues/276">#276</a></li>
+<li>Added <code>Map.zoomToObject()</code> method <a href="https://github.com/giswqs/geemap/issues/303">#303</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improved <code>Map.centerObject()</code> method <a href="https://github.com/giswqs/geemap/issues/303">#303</a></li>
+</ul>
+<h2 id="v089-february-4-2021">v0.8.9 - February 4, 2021<a class="headerlink" href="#v089-february-4-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added <a href="https://github.com/giswqs/whiteboxgui">whiteboxgui</a> with 477 geoprocessing tools <a href="https://github.com/giswqs/geemap/issues/254">#254</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Fixed file open encoding bug</li>
+</ul>
+<h2 id="v088-january-17-2021">v0.8.8 - January 17, 2021<a class="headerlink" href="#v088-january-17-2021" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added support for converting Pandas/GeoPandas DataFrame to ee.FeatureCollection and vice versa <a href="https://github.com/giswqs/geemap/issues/268">#268</a></li>
+<li>Added KML/KMZ support <a href="https://github.com/giswqs/geemap/issues/247">#247</a></li>
+<li>Added Code of Conduct</li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Fixed CSV encoding bug <a href="https://github.com/giswqs/geemap/issues/267">#267</a></li>
+<li>Improved downloading shp support <a href="https://github.com/giswqs/geemap/issues/263">#263</a></li>
+<li>Fixed WMS bug <a href="https://github.com/giswqs/geemap/discussions/250">#250</a></li>
+<li>Added cartoee subplots example <a href="https://github.com/giswqs/geemap/discussions/238">#238</a></li>
+<li>Reformatted code using black formatter</li>
+<li>Improved support for shp and geojson <a href="https://github.com/giswqs/geemap/issues/244">#244</a></li>
+<li>Fixed layer control bug</li>
+<li>Added cartoee blend tutorial <a href="https://github.com/giswqs/geemap/issues/241">#241</a></li>
+<li>Improved drawing tools <a href="https://github.com/giswqs/geemap/issues/240">#240</a></li>
+<li>Improved Inspector tool</li>
+</ul>
+<h2 id="v087-december-27-2020">v0.8.7 - December 27, 2020<a class="headerlink" href="#v087-december-27-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added toolbar GUI <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added layer vis <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added raster/vector colormap <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added support for linking legend with layer <a href="https://github.com/giswqs/geemap/issues/234">#234</a></li>
+<li>Added styled vector function <a href="https://github.com/giswqs/geemap/issues/235">#235</a></li>
+<li>Added mouse click observe to toolbar <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added new tool for opening local data <a href="https://github.com/giswqs/geemap/issues/239">#239 </a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Fixed COG mosaic bug <a href="https://github.com/giswqs/geemap/issues/236">#236</a> and <a href="https://github.com/giswqs/geemap/issues/237">#237</a></li>
+</ul>
+<h2 id="v086-december-22-2020">v0.8.6 - December 22, 2020<a class="headerlink" href="#v086-december-22-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Added GUI for changing layer visualization interactively <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added a toolbar <a href="https://github.com/giswqs/geemap/issues/215">#215</a></li>
+<li>Added color bar support <a href="https://github.com/giswqs/geemap/issues/223">#223</a></li>
+<li>Added draggable legend to folium maps <a href="https://github.com/giswqs/geemap/issues/224">#224</a></li>
+<li>Added <code>get_image_collection_gif()</code> function <a href="https://github.com/giswqs/geemap/issues/225">#225</a></li>
+<li>Added <code>image_dates()</code> function <a href="https://github.com/giswqs/geemap/issues/216">#216 </a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Added <code>max_zoom</code> parameter to <code>add_tile_layer()</code> <a href="https://github.com/giswqs/geemap/issues/227">#227</a></li>
+<li>Added mouse latlon to insepctor tool <a href="https://github.com/giswqs/geemap/discussions/229">#229</a></li>
+<li>Added download icon to notebooks <a href="https://github.com/giswqs/geemap/issues/202">#202</a></li>
+<li>Added GitHub issue template <a href="https://github.com/giswqs/geemap/issues/202">#202</a></li>
+<li>Added more tutorials (cartoee gif, legend, color bar, vis GUI, etc.)</li>
+<li>Fixed remove control bug <a href="https://github.com/giswqs/geemap/discussions/218">#218</a></li>
+<li>Fixed split-panel map bug</li>
+<li>Improved Exception handling</li>
+</ul>
+<h2 id="v085-december-12-2020">v0.8.5 - December 12, 2020<a class="headerlink" href="#v085-december-12-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features</strong>:</p>
+<ul>
+<li>Add toolbar <a href="https://github.com/giswqs/geemap/issues/6">#6</a></li>
+<li>Add fuctions for downloading imgae thumbnails <a href="https://github.com/giswqs/geemap/issues/214">#214</a></li>
+<li>Add func for getting image collection dates <a href="https://github.com/giswqs/geemap/issues/216">#216</a></li>
+<li>Add cartoee scale bar and north arrow <a href="https://github.com/giswqs/geemap/issues/191">#191</a></li>
+<li>Add support for COG mosaic <a href="https://github.com/giswqs/geemap/issues/200">#200</a></li>
+</ul>
+<p><strong>Improvement</strong>:</p>
+<ul>
+<li>Improve support for locally trained models <a href="https://github.com/giswqs/geemap/issues/210">#210</a></li>
+<li>Add verbose option of downloading functions <a href="https://github.com/giswqs/geemap/pull/197">#197</a></li>
+<li>Improve Inspector tool for point geometry <a href="https://github.com/giswqs/geemap/issues/198">#198</a></li>
+<li>Add tutorials (COG, STAC, local RF, image thumbnails)</li>
+</ul>
+<h2 id="v084-december-6-2020">v0.8.4 - December 6, 2020<a class="headerlink" href="#v084-december-6-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features:</strong></p>
+<ul>
+<li>Add support for Cloud Optimized GeoTIFF (COG) and SpatioTemporal Asset Catalog (STAC) #192</li>
+<li>Add <a href="https://geemap.org/geemap/#geemap.geemap.Map.add_COG_layer">Map.add_COG_layer()</a> and <a href="https://geemap.org/geemap/#geemap.geemap.Map.add_STAC_layer">Map.add_STAC_layer()</a></li>
+<li>Add new COG functions, e.g., <code>get_COG_tile()</code>, <code>get_COG_bounds()</code>, <code>get_COG_center()</code>, <code>get_COG_bands()</code></li>
+<li>Add new STAC functions, e.g., <code>get_STAC_tile()</code>, <code>get_STAC_bounds()</code>, <code>get_STAC_center()</code>, <code>get_STAC_bands()</code></li>
+</ul>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Improve Google Colab support #193. Use <code>import geemap</code> rather than <code>import geemap.eefolium as geemap</code></li>
+<li>Add <code>Open in Colab</code> button to notebooks #194</li>
+</ul>
+<h2 id="v083-december-2-2020">v0.8.3 - December 2, 2020<a class="headerlink" href="#v083-december-2-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features:</strong></p>
+<ul>
+<li>Add button for removing user-drawn features #182</li>
+<li>Add function for moving drawn layer to top</li>
+<li>Add remove_last_drawn() function #130</li>
+<li>Add support for QGIS Layer Style File #174</li>
+<li>Add mouse click get coordinates example #173</li>
+<li>Add cartoee colab example #157</li>
+<li>Add notebooks to mkdocs</li>
+</ul>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Improve ee_Initialize() #189 #190</li>
+<li>Fix cartoee map orientation bug #177 #183</li>
+<li>Fix problematic Date field in shapefile #176</li>
+<li>Fix Windows unzip bug</li>
+</ul>
+<h2 id="v082-november-6-2020">v0.8.2 - November 6, 2020<a class="headerlink" href="#v082-november-6-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li>Reorganize modules</li>
+<li>Add a new module common.py</li>
+<li>Add new domain geemap.org</li>
+<li>Format code using black</li>
+<li>Add more init options for Map class</li>
+</ul>
+<h2 id="v081-october-27-2020">v0.8.1 - October 27, 2020<a class="headerlink" href="#v081-october-27-2020" title="Permanent link">&para;</a></h2>
+<p><strong>New Features:</strong></p>
+<ul>
+<li>Add machine learning module #124 #156</li>
+<li>Add cartoee module #157 #161</li>
+<li>Add more tutorials (e.g., timelapse, water app, ipywidgets)</li>
+</ul>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Make ee_Initialize() optional for Map class</li>
+</ul>
+<p>BIG THANK YOU to <a href="https://github.com/kmarkert">Kel Markert</a> for adding the cartoee and ml modules!!</p>
+<h2 id="v080-october-10-2020">v0.8.0 - October 10, 2020<a class="headerlink" href="#v080-october-10-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li>Add support for loading Cloud Optimized GeoTIFFs as ee.Image and ee.ImageCollection</li>
+<li>Make fmask optional when creating Landsat timelapse</li>
+<li>Add support for creating timelapse of spectral indices (e.g., NDWI, NDVI)</li>
+<li>Add geemap Colab tutorial</li>
+<li>Add timelapse download option for voila</li>
+<li>Add pydeck tutorial for visualizing 3D terrain data</li>
+<li>Add qualityMosaic() tutorial</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Fix Windows zipfile bug</li>
+</ul>
+<h2 id="v0713-september-15-2020">v0.7.13 - September 15, 2020<a class="headerlink" href="#v0713-september-15-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li>Improve ee authentication in Colab #145</li>
+<li>Improve non-interactive mode #138</li>
+<li>Add Colab notebook example</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Fix automated testing error</li>
+<li>Fix Windows ee_search() bug</li>
+</ul>
+<h2 id="v0712-september-1-2020">v0.7.12 - September 1, 2020<a class="headerlink" href="#v0712-september-1-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li>Rebuild docs using mkdocs-material</li>
+<li>Add Internet proxy function</li>
+<li>Add support for exporting shp and geojson #63</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Fix heroko config bug</li>
+<li>Fix landsat timelapse bug #99 #134</li>
+<li>Fix js_py conversion bug #136</li>
+</ul>
+<h2 id="v0711-august-16-2020">v0.7.11 - August 16, 2020<a class="headerlink" href="#v0711-august-16-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Add function for removing drawn features #130</li>
+<li>Add function for extracting pixel values #131</li>
+<li>Add function for interactive region reduction #35</li>
+<li>Add machine learning tutorials</li>
+</ul>
+<p><strong>Fixes:</strong></p>
+<ul>
+<li><a href="https://github.com/giswqs/geemap/commit/6c0ebe4006d60f9ebb4390d0914400fc276e2c7d">Fix js_py conversion bug</a></li>
+<li>Fix typos</li>
+</ul>
+<h2 id="v0710-august-5-2020">v0.7.10 - August 5, 2020<a class="headerlink" href="#v0710-august-5-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Add function for getting image properties</li>
+<li>Add function for calculating descriptive statistics (i.e., min, max, mean, std, sum)</li>
+<li>Add more utils functions</li>
+</ul>
+<h2 id="v077-august-5-2020">v0.7.7 - August 5, 2020<a class="headerlink" href="#v077-august-5-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Improvements:</strong></p>
+<ul>
+<li>Add support for publishing maps #109</li>
+<li>Add <code>find_layer()</code> function</li>
+<li>Add <code>layer_opacity()</code> function</li>
+<li>Update Readthedocs</li>
+</ul>
+<p><strong>Fixes:</strong></p>
+<ul>
+<li>Fix duplicate layer bug</li>
+</ul>
+<h2 id="v070-may-22-2020">v0.7.0 - May 22, 2020<a class="headerlink" href="#v070-may-22-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v060-april-5-2020">v0.6.0 - April 5, 2020<a class="headerlink" href="#v060-april-5-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v050-march-23-2020">v0.5.0 - March 23, 2020<a class="headerlink" href="#v050-march-23-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v040-march-19-2020">v0.4.0 - March 19, 2020<a class="headerlink" href="#v040-march-19-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v030-march-18-2020">v0.3.0 - March 18, 2020<a class="headerlink" href="#v030-march-18-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v020-march-17-2020">v0.2.0 - March 17, 2020<a class="headerlink" href="#v020-march-17-2020" title="Permanent link">&para;</a></h2>
+<h2 id="v010-march-8-2020">v0.1.0 - March 8, 2020<a class="headerlink" href="#v010-march-8-2020" title="Permanent link">&para;</a></h2>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-05-19
+    
+  </small>
+</div>
+                  
+                
+              
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../faq/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              FAQ
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../basemaps/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              basemaps module
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      
+    
+  </body>
+</html>
